@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     MaterialButton buttonAC;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) { //buttons linkage
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         solutiontv=findViewById(R.id.solution_textview);
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String buttonText=button.getText().toString();
         String datacalc=solutiontv.getText().toString();
 
-        if(buttonText.equals("AC")) //all_clear_button
+        if(buttonText.equals("AC"))
         {
             solutiontv.setText("");
             resulttv.setText("0");
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             resulttv.setText(finalResult);
         }
     }
-    String getResult(String data) //evaluation
+    String getResult(String data)
     {
         try { //caculation_part
             Context context=Context.enter();
